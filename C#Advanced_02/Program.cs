@@ -37,6 +37,13 @@ namespace C_Advanced_02
             //var clothingUnder100 = Product.SearchProducts(catalog, p => p.Category == "Clothing" && p.Price < 100);
             //foreach (var p in clothingUnder100) Console.WriteLine($"{p.Name} - ${p.Price} (Stock: {p.Stock})");
             #endregion
+            #region Task3.1
+            //Console.WriteLine("--- Short Report ---");
+            //Product.PrintReport(catalog, p => Console.WriteLine($"{p.Name} - ${p.Price}"));
+
+            //Console.WriteLine("\n--- Detailed Report ---");
+            //Product.PrintReport(catalog, p => Console.WriteLine($"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}")); 
+            #endregion
         }
     }
 }

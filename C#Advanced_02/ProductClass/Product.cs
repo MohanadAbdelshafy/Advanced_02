@@ -28,6 +28,7 @@ namespace C_Advanced_02.ProductClass
         }
         #endregion
         #region Task3.1 helper
+        //We want to execute a block of code for each product in the list, allowing the caller to define what that block of code does
         public static void PrintReport(List<Product> products, Action<Product> action)
         {
             foreach (var p in products)
