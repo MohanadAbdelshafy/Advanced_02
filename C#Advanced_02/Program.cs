@@ -53,6 +53,11 @@ namespace C_Advanced_02
             //List<string> priceLabels = Product.TransformProducts(catalog, p => $"{p.Name}: {(p.Price > 100 ? "Expensive!" : "Affordable")}");
             //foreach (var item in priceLabels) Console.WriteLine(item); 
             #endregion
+            #region Task3.3
+            //Console.WriteLine("\n--- Low-Stock Alert ---");
+            //List<Product> lowStock = Product.FilterProducts(catalog, p => p.Stock < 20);
+            //foreach (var p in lowStock) Console.WriteLine($"[LOW STOCK] {p.Name}: only {p.Stock} left!"); 
+            #endregion
         }
     }
 }

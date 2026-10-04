@@ -47,6 +47,21 @@ namespace C_Advanced_02.ProductClass
                 result.Add(transform(p));
             }
             return result;
+        }
+        #endregion
+        #region Task3.3
+        //Predicate is specifically designed for scenarios where we want to evaluate a condition and return a boolean result. It is a delegate that takes an input parameter and returns a boolean value, making it ideal for filtering operations.
+        public static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicate)
+        {
+            List<Product> result = new();
+            foreach (var p in products)
+            {
+                if (predicate(p))
+                {
+                    result.Add(p);
+                }
+            }
+            return result;
         } 
         #endregion
     }
