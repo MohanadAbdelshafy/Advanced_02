@@ -44,6 +44,15 @@ namespace C_Advanced_02
             //Console.WriteLine("\n--- Detailed Report ---");
             //Product.PrintReport(catalog, p => Console.WriteLine($"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}")); 
             #endregion
+            #region Task3.2
+            //Console.WriteLine("\n--- Summary List ---");
+            //List<string> summaryList = Product.TransformProducts(catalog, p => $"{p.Name} (${p.Price})");
+            //foreach (var item in summaryList) Console.WriteLine(item);
+
+            //Console.WriteLine("\n--- Price Labels ---");
+            //List<string> priceLabels = Product.TransformProducts(catalog, p => $"{p.Name}: {(p.Price > 100 ? "Expensive!" : "Affordable")}");
+            //foreach (var item in priceLabels) Console.WriteLine(item); 
+            #endregion
         }
     }
 }

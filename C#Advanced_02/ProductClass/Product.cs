@@ -35,6 +35,18 @@ namespace C_Advanced_02.ProductClass
             {
                 action(p);
             }
+        }
+        #endregion
+        #region Task3.2 helper
+        //We need to take an input parameter of type Product, transform its data, and return a formatted string
+        public static List<string> TransformProducts(List<Product> products, Func<Product, string> transform)
+        {
+            List<string> result = new List<string>();
+            foreach (var p in products)
+            {
+                result.Add(transform(p));
+            }
+            return result;
         } 
         #endregion
     }
